@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>TaxiCretanTransfers | Taxi Services in Rethymno, Crete</title>
+
+  <meta name="description" content="TaxiCretanTransfers by Giannis offers professional taxi services in Rethymno, Crete. Airport transfers, hotel transfers, private tours, port transfers, chauffeur services and family transfers across Crete." />
+  <meta name="keywords" content="Taxi Rethymno, Rethymno taxi, Crete taxi, Crete airport transfer, Heraklion airport transfer, Chania airport transfer, private tours Crete, taxi transfer Rethymno, TaxiCretanTransfers" />
+
+  <meta property="og:title" content="TaxiCretanTransfers | Premium Taxi Services in Crete" />
+  <meta property="og:description" content="Professional taxi services by Giannis — airport transfers, private tours, hotel transfers and chauffeur services across Crete." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/fleet-car-front.jpg" />
+
+  <style>
+    :root {
+      --gold: #e6a800;
+      --gold-light: #ffd766;
+      --gold-dark: #bd8500;
+      --black: #070707;
+      --dark: #171717;
+      --white: #ffffff;
+      --light: #f7f7f7;
+      --gray: #666666;
+      --border: #e9e9e9;
+      --shadow: 0 18px 55px rgba(0,0,0,0.14);
+      --radius: 24px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--black);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    .topbar {
+      background: var(--black);
+      color: var(--white);
+      padding: 9px 0;
+      font-size: 14px;
+    }
+
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+    }
+
+    .nav {
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand img {
+      width: 255px;
+      max-height: 68px;
+      object-fit: contain;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-weight: 800;
+      font-size: 15px;
+    }
+
+    .menu a {
+      transition: color .2s ease;
+    }
+
+    .menu a:hover {
+      color: var(--gold-dark);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: none;
+      border-radius: 999px;
+      padding: 13px 21px;
+      font-weight: 900;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all .25s ease;
+      white-space: nowrap;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--black);
+      box-shadow: 0 14px 35px rgba(230,168,0,0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 42px rgba(230,168,0,0.45);
+    }
+
+    .btn-dark {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .btn-dark:hover {
+      background: #242424;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 2px solid rgba(255,255,255,0.75);
+      background: rgba(255,255,255,0.08);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--black);
+    }
+
+    .mobile-btn {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    .hero {
+      min-height: calc(100vh - 120px);
+      background:
+        linear-gradient(90deg, rgba(0,0,0,0.84), rgba(0,0,0,0.46), rgba(0,0,0,0.16)),
+        url("images/fleet-car-front.jpg") center/cover no-repeat;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 38px;
+      align-items: center;
+      padding: 76px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--black);
+      background: rgba(255,255,255,0.9);
+      padding: 9px 15px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow b {
+      color: var(--gold-dark);
+    }
+
+    h1 {
+      font-size: clamp(42px, 6vw, 74px);
+      line-height: 1.02;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero-copy p {
+      max-width: 680px;
+      color: rgba(255,255,255,0.92);
+      font-size: 19px;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      max-width: 680px;
+    }
+
+    .point {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      backdrop-filter: blur(12px);
+      border-radius: 18px;
+      padding: 16px;
+    }
+
+    .point strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 23px;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+
+    .point span {
+      color: rgba(255,255,255,0.9);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .booking-card {
+      background: rgba(255,255,255,0.97);
+      color: var(--black);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .booking-card h2 {
+      font-size: 30px;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+
+    .booking-card p {
+      color: var(--gray);
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-size: 13px;
+      font-weight: 900;
+      color: #333;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid #dddddd;
+      border-radius: 15px;
+      padding: 13px 14px;
+      font-size: 15px;
+      outline: none;
+      font-family: inherit;
+      background: #fff;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 4px rgba(230,168,0,0.18);
+    }
+
+    textarea {
+      min-height: 92px;
+      resize: vertical;
+    }
+
+    .booking-card .btn {
+      width: 100%;
+      margin-top: 16px;
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-head {
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .section-label {
+      display: inline-block;
+      color: var(--gold-dark);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.12;
+      letter-spacing: -1px;
+      margin-bottom: 14px;
+    }
+
+    .section-head p {
+      color: var(--gray);
+      font-size: 18px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card,
+    .why-card,
+    .route-card,
+    .fleet-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .service-card:hover,
+    .why-card:hover,
+    .fleet-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .icon {
+      width: 56px;
+      height: 56px;
+      display: grid;
+      place-items: center;
+      border-radius: 17px;
+      background: rgba(230,168,0,0.16);
+      color: var(--gold-dark);
+      font-size: 27px;
+      margin-bottom: 18px;
+    }
+
+    .service-card h3,
+    .why-card h3,
+    .fleet-card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .service-card p,
+    .why-card p,
+    .fleet-card p {
+      color: var(--gray);
+    }
+
+    .fleet {
+      background: var(--light);
+    }
+
+    .fleet-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .fleet-card {
+      padding: 0;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .fleet-card img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+    }
+
+    .fleet-info {
+      padding: 26px;
+    }
+
+    .fleet-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .tag {
+      background: #f1f1f1;
+      color: #333;
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .gallery {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 22px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    }
+
+    .why {
+      background:
+        linear-gradient(rgba(0,0,0,0.84), rgba(0,0,0,0.84)),
+        url("images/fleet-car-side.jpg") center/cover no-repeat;
+      color: var(--white);
+    }
+
+    .why .section-head p {
+      color: rgba(255,255,255,0.78);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .why-card {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.15);
+      color: var(--white);
+      backdrop-filter: blur(12px);
+    }
+
+    .why-card p {
+      color: rgba(255,255,255,0.78);
+    }
+
+    .routes-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .route-card {
+      padding: 22px;
+    }
+
+    .route-card strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+
+    .route-card span {
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 530px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .about-badge {
+      position: absolute;
+      left: 24px;
+      bottom: 24px;
+      max-width: 300px;
+      background: var(--white);
+      border-radius: 20px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-badge strong {
+      display: block;
+      color: var(--gold-dark);
+      font-size: 27px;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+
+    .about-content p {
+      color: var(--gray);
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .check-list li {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: #333;
+      font-weight: 800;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      width: 24px;
+      height: 24px;
+      flex: 0 0 24px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--black);
+      font-weight: 900;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    details {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.05);
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    details p {
+      color: var(--gray);
+      margin-top: 12px;
+    }
+
+    .contact {
+      background: var(--light);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .contact-box {
+      background: var(--black);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-box h3 {
+      font-size: 31px;
+      margin-bottom: 14px;
+    }
+
+    .contact-box p {
+      color: rgba(255,255,255,0.78);
+      margin-bottom: 24px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 14px;
+    }
+
+    .contact-item span:first-child {
+      color: var(--gold);
+      font-size: 22px;
+    }
+
+    .map-card {
+      min-height: 430px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background:
+        linear-gradient(rgba(0,0,0,0.08), rgba(0,0,0,0.15)),
+        url("images/fleet-van-front.jpg") center/cover no-repeat;
+      position: relative;
+    }
+
+    .map-overlay {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 24px;
+      background: rgba(255,255,255,0.95);
+      border-radius: 20px;
+      padding: 24px;
+    }
+
+    .map-overlay h3 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .map-overlay p {
+      color: var(--gray);
+      margin-bottom: 16px;
+    }
+
+    footer {
+      background: var(--black);
+      color: var(--white);
+      padding: 46px 0 22px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .footer-logo {
+      width: 260px;
+      background: #fff;
+      border-radius: 16px;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+
+    .footer-grid p,
+    .footer-grid a {
+      color: rgba(255,255,255,0.72);
+    }
+
+    .footer-grid h4 {
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 8px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,0.6);
+      font-size: 14px;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 999;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #25d366;
+      color: #fff;
+      font-size: 28px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+      transition: transform .25s ease;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    @media (max-width: 980px) {
+      .menu {
+        position: fixed;
+        top: 118px;
+        left: 4%;
+        right: 4%;
+        background: #fff;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        display: none;
+      }
+
+      .menu.active {
+        display: flex;
+      }
+
+      .mobile-btn {
+        display: block;
+      }
+
+      .nav-actions .btn {
+        display: none;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid,
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .routes-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .fleet-grid,
+      .faq-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 620px) {
+      .topbar {
+        display: none;
+      }
+
+      .nav {
+        height: 78px;
+      }
+
+      .brand img {
+        width: 205px;
+      }
+
+      .menu {
+        top: 88px;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-grid {
+        padding: 56px 0;
+      }
+
+      .hero-points,
+      .services-grid,
+      .why-grid,
+      .routes-grid,
+      .form-grid,
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .booking-card {
+        padding: 22px;
+      }
+
+      .fleet-card img,
+      .gallery img {
+        height: 250px;
+      }
+
+      .about-image img {
+        height: 390px;
+      }
+
+      .floating-whatsapp {
+        right: 16px;
+        bottom: 16px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TaxiService",
+    "name": "TaxiCretanTransfers",
+    "description": "Professional taxi and private transfer services in Rethymno, Crete by Giannis.",
+    "areaServed": [
+      "Rethymno",
+      "Crete",
+      "Heraklion Airport",
+      "Chania Airport",
+      "Heraklion Port",
+      "Chania",
+      "Knossos",
+      "Elafonisi",
+      "Balos Lagoon"
+    ],
+    "telephone": "+306989436137",
+    "email": "taxicretantransfers@gmail.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Giannis"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rethymno",
+      "addressRegion": "Crete",
+      "addressCountry": "GR"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <span>TaxiCretanTransfers — Premium Taxi Services in Crete</span>
+      <span>Call Giannis: +30 698 943 6137</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="TaxiCretanTransfers home">
+        <img src="images/logo.png" alt="TaxiCretanTransfers logo">
+      </a>
+
+      <nav class="menu" id="menu">
+        <a href="#services">Services</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-dark" href="tel:+306989436137">Call Now</a>
+        <a class="btn btn-primary" href="#booking">Book Transfer</a>
+        <button class="mobile-btn" id="mobileBtn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">🚕 <b>Driven by Giannis</b> Premium Taxi Services in Crete</div>
+
+          <h1>Travel Crete in Style & Comfort</h1>
+
+          <p>
+            Professional taxi services by Giannis — airport transfers, private tours,
+            hotel transfers and chauffeur services across the beautiful island of Crete.
+            Based in Rethymno, TaxiCretanTransfers combines local knowledge, punctual service
+            and comfortable Mercedes vehicles to make every journey relaxed, safe and memorable.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#booking">Book with Giannis</a>
+            <a class="btn btn-outline" href="https://wa.me/306989436137" target="_blank" rel="noopener">
+              WhatsApp Giannis
+            </a>
+          </div>
+
+          <div class="hero-points">
+            <div class="point">
+              <strong>24/7</strong>
+              <span>Transfer Requests</span>
+            </div>
+
+            <div class="point">
+              <strong>HER & CHQ</strong>
+              <span>Airport Transfers</span>
+            </div>
+
+            <div class="point">
+              <strong>Mercedes</strong>
+              <span>Comfort Fleet</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-card" id="booking">
+          <h2>Request Your Transfer</h2>
+          <p>
+            Send your trip details directly to Giannis on WhatsApp.
+            Your booking will be confirmed personally.
+          </p>
+
+          <form id="bookingForm">
+            <div class="form-grid">
+              <div class="form-field full">
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                  <option>Airport Transfer</option>
+                  <option>City Tour</option>
+                  <option>Hotel Transfer</option>
+                  <option>Private Chauffeur</option>
+                  <option>Port Transfer</option>
+                  <option>Family & Group Transfer</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="pickup">Pickup Location</label>
+                <input id="pickup" name="pickup" type="text" placeholder="Airport, hotel, villa..." required>
+              </div>
+
+              <div class="form-field">
+                <label for="dropoff">Drop-off Location</label>
+                <input id="dropoff" name="dropoff" type="text" placeholder="Destination..." required>
+              </div>
+
+              <div class="form-field">
+                <label for="date">Date</label>
+                <input id="date" name="date" type="date" required>
+              </div>
+
+              <div class="form-field">
+                <label for="time">Time</label>
+                <input id="time" name="time" type="time" required>
+              </div>
+
+              <div class="form-field">
+                <label for="passengers">Passengers</label>
+                <select id="passengers" name="passengers">
+                  <option>1 passenger</option>
+                  <option>2 passengers</option>
+                  <option>3 passengers</option>
+                  <option>4 passengers</option>
+                  <option>5 passengers</option>
+                  <option>6 passengers</option>
+                  <option>7 passengers</option>
+                  <option>8 passengers</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="luggage">Luggage</label>
+                <select id="luggage" name="luggage">
+                  <option>Small luggage</option>
+                  <option>Medium luggage</option>
+                  <option>Large luggage</option>
+                  <option>Extra luggage</option>
+                </select>
+              </div>
+
+              <div class="form-field full">
+                <label for="name">Your Name</label>
+                <input id="name" name="name" type="text" placeholder="Full name" required>
+              </div>
+
+              <div class="form-field full">
+                <label for="contactInfo">Phone or Email</label>
+                <input id="contactInfo" name="contactInfo" type="text" placeholder="+30... or email@example.com" required>
+              </div>
+
+              <div class="form-field full">
+                <label for="message">Extra Notes</label>
+                <textarea id="message" name="message" placeholder="Flight number, child seat request, cruise arrival, special route..."></textarea>
+              </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send Request to Giannis</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Our Services</span>
+          <h2>Premium taxi and private transfer services in Crete</h2>
+          <p>
+            TaxiCretanTransfers provides professional, comfortable and reliable taxi services
+            from Rethymno to airports, ports, hotels, villas and the most beautiful destinations in Crete.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="icon">✈️</div>
+            <h3>Airport Transfers</h3>
+            <p>
+              Reliable pickups and drop-offs at Heraklion Airport HER and Chania Airport CHQ.
+              Flight-monitored and always handled with care.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🏛️</div>
+            <h3>City Tours</h3>
+            <p>
+              Discover the beauty of Crete — Rethymno Old Town, Knossos, Chania,
+              Elafonisi, Balos Lagoon and more.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🏨</div>
+            <h3>Hotel Transfers</h3>
+            <p>
+              Door-to-door service between airports, ports, hotels and villas
+              all across the island of Crete.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">🚗</div>
+            <h3>Private Chauffeur</h3>
+            <p>
+              Book Giannis by the hour for business, shopping, weddings
+              or a full day of exploration at your own pace.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">⛴️</div>
+            <h3>Port Transfers</h3>
+            <p>
+              Comfortable rides to and from Heraklion Port — perfect for cruise ship
+              passengers and ferry travelers.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="icon">👨‍👩‍👧‍👦</div>
+            <h3>Family & Groups</h3>
+            <p>
+              Spacious Mercedes vehicles ideal for families and small groups,
+              with plenty of luggage space and child seats on request.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fleet" id="fleet">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Our Fleet</span>
+          <h2>Comfortable Mercedes vehicles for every journey</h2>
+          <p>
+            Clean, air-conditioned and carefully maintained vehicles for airport transfers,
+            private tours, hotel pickups and chauffeur services across Crete.
+          </p>
+        </div>
+
+        <div class="fleet-grid">
+          <div class="fleet-card">
+            <img src="images/fleet-car-side.jpg" alt="White Mercedes taxi vehicle in Crete">
+            <div class="fleet-info">
+              <h3>Mercedes Premium Taxi</h3>
+              <p>
+                Elegant and comfortable for airport transfers, city rides,
+                private trips and business travel.
+              </p>
+
+              <div class="fleet-tags">
+                <span class="tag">Up to 4 passengers</span>
+                <span class="tag">Air conditioning</span>
+                <span class="tag">Comfort seats</span>
+                <span class="tag">Luggage space</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="fleet-card">
+            <img src="images/fleet-van-front.jpg" alt="White Mercedes minivan in Crete">
+            <div class="fleet-info">
+              <h3>Mercedes Minivan</h3>
+              <p>
+                Spacious and practical for families, groups, port transfers,
+                tours and travellers with extra luggage.
+              </p>
+
+              <div class="fleet-tags">
+                <span class="tag">Up to 8 passengers</span>
+                <span class="tag">Group transfers</span>
+                <span class="tag">Large luggage</span>
+                <span class="tag">Child seats on request</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <img src="images/fleet-car-front.jpg" alt="TaxiCretanTransfers Mercedes car front view">
+          <img src="images/fleet-car-detail.jpg" alt="Mercedes taxi in Rethymno Crete">
+          <img src="images/fleet-interior.jpg" alt="Mercedes taxi interior">
+          <img src="images/fleet-van-side.jpg" alt="Mercedes minivan side view">
+          <img src="images/fleet-van-front.jpg" alt="Mercedes minivan transfer vehicle">
+          <img src="images/fleet-car-side.jpg" alt="Premium taxi fleet in Crete">
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Why Choose Us</span>
+          <h2>Reliable transfers with Cretan hospitality</h2>
+          <p>
+            Giannis offers a personal, friendly and professional service designed to make
+            your journey in Crete smooth from the first message to the final destination.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="icon">⏱️</div>
+            <h3>Punctual Service</h3>
+            <p>
+              Airport and port pickups are carefully planned so your transfer starts smoothly.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="icon">🧼</div>
+            <h3>Clean Vehicles</h3>
+            <p>
+              Travel in clean, comfortable and air-conditioned Mercedes vehicles.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="icon">🧭</div>
+            <h3>Local Knowledge</h3>
+            <p>
+              Giannis knows Crete’s routes, villages, beaches, landmarks and hidden gems.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="icon">🤝</div>
+            <h3>Personal Care</h3>
+            <p>
+              Friendly communication, careful driving and service with authentic Cretan hospitality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Destinations</span>
+          <h2>Transfers from Rethymno to all Crete</h2>
+          <p>
+            Book private transfers and tours from Rethymno to airports, ports,
+            beaches, villages, hotels, villas and famous Cretan attractions.
+          </p>
+        </div>
+
+        <div class="routes-grid">
+          <div class="route-card">
+            <strong>Heraklion Airport HER</strong>
+            <span>Airport pickups and drop-offs</span>
+          </div>
+
+          <div class="route-card">
+            <strong>Chania Airport CHQ</strong>
+            <span>Comfortable airport transfers</span>
+          </div>
+
+          <div class="route-card">
+            <strong>Rethymno Old Town</strong>
+            <span>City rides and sightseeing</span>
+          </div>
+
+          <div class="route-card">
+            <strong>Heraklion Port</strong>
+            <span>Ferry and cruise transfers</span>
+          </div>
+
+          <div class="route-card">
+            <strong>Knossos Palace</strong>
+            <span>Private cultural tours</span>
+          </div>
+
+          <div class="route-card">
+            <strong>Chania</strong>
+            <span>Old Venetian Harbour trips</span>
+          </div>
+
+          <div class="route-card">
+            <strong>Elafonisi</strong>
+            <span>Beach day transfers</span>
+          </div>
+
+          <div class="route-card">
+            <strong>Balos Lagoon</strong>
+            <span>Private island experiences</span>
+          </div>
+
+          <div class="route-card">
+            <strong>Plakias</strong>
+            <span>South coast transfers</span>
+          </div>
+
+          <div class="route-card">
+            <strong>Preveli Beach</strong>
+            <span>Nature and beach tours</span>
+          </div>
+
+          <div class="route-card">
+            <strong>Bali & Panormo</strong>
+            <span>Hotel and villa transfers</span>
+          </div>
+
+          <div class="route-card">
+            <strong>All Crete</strong>
+            <span>Custom private routes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="images/fleet-car-front.jpg" alt="TaxiCretanTransfers vehicle in Crete">
+          <div class="about-badge">
+            <strong>Giannis</strong>
+            Your local driver in Rethymno, Crete
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-label">About TaxiCretanTransfers</span>
+          <h2>Your local taxi partner in Rethymno</h2>
+
+          <p>
+            TaxiCretanTransfers is a professional taxi and private transfer service based
+            in Rethymno, Crete. With Giannis behind the wheel, every journey is handled
+            with care, punctuality and local expertise.
+          </p>
+
+          <p>
+            Whether you are arriving in Crete for the first time or returning to your favourite
+            destination, Giannis makes sure your transfer is smooth from start to finish.
+            Enjoy friendly communication, careful driving, clean vehicles and a personal service
+            that helps you feel welcome from the moment you arrive.
+          </p>
+
+          <p>
+            Your reliable local taxi service in Rethymno — where comfort, punctuality
+            and authentic Cretan hospitality come together.
+          </p>
+
+          <ul class="check-list">
+            <li>Airport transfers from Heraklion and Chania</li>
+            <li>Hotel, villa, port and cruise passenger pickups</li>
+            <li>Private city tours and custom routes around Crete</li>
+            <li>Mercedes cars and minivans for comfort and space</li>
+            <li>Child seats available on request</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="section-label">Questions</span>
+          <h2>Frequently asked questions</h2>
+        </div>
+
+        <div class="faq-grid">
+          <details>
+            <summary>Do you offer airport transfers?</summary>
+            <p>
+              Yes. TaxiCretanTransfers offers pickups and drop-offs at Heraklion Airport HER
+              and Chania Airport CHQ.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can I book a private tour?</summary>
+            <p>
+              Yes. You can book private tours to Rethymno Old Town, Knossos, Chania,
+              Elafonisi, Balos Lagoon, Preveli and many more destinations.
+            </p>
+          </details>
+
+          <details>
+            <summary>Do you provide child seats?</summary>
+            <p>
+              Yes. Child seats are available on request. Please mention it when sending your booking request.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can you transfer families and groups?</summary>
+            <p>
+              Yes. Spacious Mercedes vehicles are available for families, small groups and travellers with luggage.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-box">
+          <h3>Contact Giannis</h3>
+          <p>
+            Ready to book your taxi or private transfer in Rethymno?
+            Contact TaxiCretanTransfers today for reliable service across Crete.
+          </p>
+
+          <div class="contact-list">
+            <a class="contact-item" href="tel:+306989436137">
+              <span>📞</span>
+              <span>+30 698 943 6137</span>
+            </a>
+
+            <a class="contact-item" href="https://wa.me/306989436137" target="_blank" rel="noopener">
+              <span>💬</span>
+              <span>WhatsApp Giannis</span>
+            </a>
+
+            <a class="contact-item" href="mailto:taxicretantransfers@gmail.com">
+              <span>✉️</span>
+              <span>taxicretantransfers@gmail.com</span>
+            </a>
+
+            <div class="contact-item">
+              <span>👤</span>
+              <span>Giannis</span>
+            </div>
+
+            <div class="contact-item">
+              <span>📍</span>
+              <span>Rethymno City, Crete, Greece</span>
+            </div>
+          </div>
+
+          <a class="btn btn-primary" href="#booking">Send Booking Request</a>
+        </div>
+
+        <div class="map-card">
+          <div class="map-overlay">
+            <h3>Serving Rethymno & all Crete</h3>
+            <p>
+              Airport transfers, city rides, beach trips, hotel pickups,
+              villa transfers, port transfers and private tours.
+            </p>
+            <a class="btn btn-dark" href="https://www.google.com/maps/search/Rethymno+Crete" target="_blank" rel="noopener">
+              View Rethymno on Map
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="images/logo.png" alt="TaxiCretanTransfers logo">
+          <p>
+            TaxiCretanTransfers by Giannis offers premium taxi, airport transfer,
+            private tour and chauffeur services in Rethymno and across Crete.
+          </p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="#services">Services</a>
+            <a href="#fleet">Fleet</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#booking">Book Transfer</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <div class="footer-links">
+            <a href="tel:+306989436137">+30 698 943 6137</a>
+            <a href="https://wa.me/306989436137" target="_blank" rel="noopener">WhatsApp Giannis</a>
+            <a href="mailto:taxicretantransfers@gmail.com">taxicretantransfers@gmail.com</a>
+            <a href="#contact">Rethymno, Crete</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <span>© <span id="year"></span> TaxiCretanTransfers. All rights reserved.</span>
+        <span>Premium Transfer Services in Rethymno, Crete</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/306989436137" target="_blank" rel="noopener" aria-label="Contact Giannis on WhatsApp">
+    💬
+  </a>
+
+  <script>
+    const mobileBtn = document.getElementById("mobileBtn");
+    const menu = document.getElementById("menu");
+
+    mobileBtn.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const data = new FormData(this);
+
+      const message = `
+Hello Giannis, I would like to request a transfer with TaxiCretanTransfers.
+
+Service: ${data.get("service")}
+Name: ${data.get("name")}
+Contact: ${data.get("contactInfo")}
+
+Pickup: ${data.get("pickup")}
+Drop-off: ${data.get("dropoff")}
+Date: ${data.get("date")}
+Time: ${data.get("time")}
+Passengers: ${data.get("passengers")}
+Luggage: ${data.get("luggage")}
+
+Extra notes:
+${data.get("message")}
+      `;
+
+      const whatsappNumber = "306989436137";
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+      window.open(whatsappURL, "_blank");
+    });
+  </script>
+
+</body>
+</html>
